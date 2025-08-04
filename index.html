@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Run and Choose</title>
+    <!--
+      This HTML file implements a simple endless‐runner style game.  The player
+      controls a hero that runs across a scrolling landscape.  At several
+      points during each level the player must choose between two power‑ups
+      (represented by a sword and a magic wand).  The selected power determines
+      whether the hero can defeat incoming monsters.  If the wrong power is
+      chosen then the hero loses a life.  Completing all monsters in a level
+      advances to the next level.  A short manifest below allows the game to
+      be installed as a progressive web app on Android devices.  See
+      `service-worker.js` for offline caching.  MDN notes that PWAs can be
+      promoted for installation and appear like platform‑specific apps on the
+      device【92065133406526†L136-L150】.
+    -->
+    <link rel="manifest" href="manifest.json" />
+    <!-- Use a root‑level icon instead of one inside an assets folder. -->
+    <link rel="icon" href="hero.png" />
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #87ceeb;
+            font-family: sans-serif;
+        }
+        #gameCanvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <script src="game.js"></script>
+</body>
+</html>
