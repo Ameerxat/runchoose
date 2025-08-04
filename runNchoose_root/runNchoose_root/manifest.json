@@ -1,0 +1,20 @@
+{
+  "name": "Run and Choose",
+  "short_name": "RunChoose",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#87ceeb",
+  "background_color": "#87ceeb",
+  "icons": [
+    {
+      "src": "hero.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "hero.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
